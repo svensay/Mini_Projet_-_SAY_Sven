@@ -38,8 +38,6 @@ public class Move : MonoBehaviour
         if (Input.GetKey(KeyCode.Escape))
         {
             Application.Quit();
-            //Debug.Log("Escape");
-
         }
 
         float h = horizontalSpeed * Input.GetAxis("Mouse X");
@@ -49,7 +47,7 @@ public class Move : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && pos.position.y <= 3.5)
             other.AddForce(new Vector3(0, 3.5f, 0), ForceMode.Impulse);
     }
 }

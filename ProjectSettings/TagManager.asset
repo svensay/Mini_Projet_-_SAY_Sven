@@ -8,6 +8,8 @@ TagManager:
   - Ennemy_follow
   - missile
   - Boss
+  - missile_ennemy
+  - life
   layers:
   - Default
   - TransparentFX

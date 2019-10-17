@@ -802,6 +802,7 @@ GameObject:
   - component: {fileID: 637177978}
   - component: {fileID: 637177979}
   - component: {fileID: 637177980}
+  - component: {fileID: 637177981}
   m_Layer: 0
   m_Name: Ennemi
   m_TagString: Boss
@@ -924,6 +925,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_position: {fileID: 985969816}
+--- !u!114 &637177981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637177973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e4aeac3e30e6d548be7f8c315cf949c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missilePrefab: {fileID: 977049594479983643, guid: fe7d3ffca6295214093036e4561baa83,
+    type: 3}
+  eachTime: 0
 --- !u!1 &712216096
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,7 +1355,6 @@ GameObject:
   - component: {fileID: 985969813}
   - component: {fileID: 985969812}
   - component: {fileID: 985969817}
-  - component: {fileID: 985969818}
   - component: {fileID: 985969820}
   - component: {fileID: 985969819}
   m_Layer: 0
@@ -1455,49 +1470,6 @@ MonoBehaviour:
   horizontalSpeed: 2
   other: {fileID: 985969812}
   pos: {fileID: 985969816}
---- !u!20 &985969818
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 985969811}
-  m_Enabled: 0
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 30
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!114 &985969819
 MonoBehaviour:
   m_ObjectHideFlags: 0
